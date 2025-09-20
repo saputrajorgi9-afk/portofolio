@@ -1,0 +1,504 @@
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    .slider-zoom {
+      position: absolute;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      display: flex;
+   display: flex;
+  justify-content: center; /* bikin horizontal center */
+  width: 100%;
+  right: 20%;
+  
+      top: 60vh;
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 12px;
+      z-index: 10;
+      overflow: visible;
+      /* biar elemen lain gak ketutup */
+    }
+
+    .slider-zoom img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+    }
+
+    /* Gambar 1 */
+    .slider-zoom img:nth-child(1) {
+      animation: slide1 18s infinite;
+    }
+
+    /* Gambar 2 */
+    .slider-zoom img:nth-child(2) {
+      animation: slide2 18s infinite;
+    }
+
+    /* Gambar 3 */
+    .slider-zoom img:nth-child(3) {
+      animation: slide3 18s infinite;
+    }
+
+    /* Keyframes Gambar 1 */
+    @keyframes slide1 {
+
+      0%,
+      22.2% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1);
+      }
+
+      22.3%,
+      33.3% {
+        opacity: 1;
+        filter: blur(4px);
+        transform: scale(1.05);
+      }
+
+      33.4%,
+      100% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: scale(1.1);
+      }
+    }
+
+    /* Keyframes Gambar 2 */
+    @keyframes slide2 {
+
+      0%,
+      33.3% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: scale(1);
+      }
+
+      33.4%,
+      55.5% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1);
+      }
+
+      55.6%,
+      66.6% {
+        opacity: 1;
+        filter: blur(4px);
+        transform: scale(1.05);
+      }
+
+      66.7%,
+      100% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: scale(1.1);
+      }
+    }
+
+    /* Keyframes Gambar 3 */
+    @keyframes slide3 {
+
+      0%,
+      66.6% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: scale(1);
+      }
+
+      66.7%,
+      88.8% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1);
+      }
+
+      88.9%,
+      100% {
+        opacity: 1;
+        filter: blur(4px);
+        transform: scale(1.05);
+      }
+    }
+
+    .TYPING {
+      display: flex;
+    }
+
+    .TYPING233 {
+      position: relative;
+      top: 1200px;
+      right: -100px;
+      width: 150px;
+      height: 150px;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 15px 30px;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 7px 4px 6px -1px, rgba(255, 255, 255, 0.08) 1px 1px 10px inset;
+      background: #000;
+      color: white;
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .TYPING233:hover {
+      background: red;
+      color: #fff;
+      filter: grayscale(0%);
+      box-shadow: (0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+
+    .TYPING234 {
+      position: relative;
+      top: 1200px;
+      right: -200px;
+      width: 150px;
+      height: 150px;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 15px 30px;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 7px 4px 6px -1px, rgba(255, 255, 255, 0.08) 1px 1px 10px inset;
+      background: #000;
+      color: white;
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .TYPING234:hover {
+      background: yellow;
+      color: #fff;
+      filter: grayscale(0%);
+      box-shadow: (0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+
+    .TYPING235 {
+      position: relative;
+      top: 1200px;
+      right: -300px;
+      width: 150px;
+      height: 150px;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 15px 30px;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 7px 4px 6px -1px, rgba(255, 255, 255, 0.08) 1px 1px 10px inset;
+      background: #000;
+      color: white;
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .TYPING235:hover {
+      background: green;
+      color: #fff;
+      filter: grayscale(0%);
+      box-shadow: (0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+
+    .TYPING236 {
+      position: relative;
+      top: 1200px;
+      right: -400px;
+      width: 150px;
+      height: 150px;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 15px 30px;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 7px 4px 6px -1px, rgba(255, 255, 255, 0.08) 1px 1px 10px inset;
+      background: black;
+      color: white;
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .TYPING236:hover {
+      background: blue;
+      color: #fff;
+      filter: grayscale(0%);
+      box-shadow: (0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+
+    .GOYANG {
+      font-size: 40px;
+      font-weight: bold;
+      animation: shake 1s infinite;
+      position: relative;
+      right: -570px;
+      top: 1100px;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+.reveal {
+    opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+}
+.reveal.show{
+   opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      color: #e2e8f0;
+      padding: 40px 20px;
+      position: relative;
+      top: 200vh;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-logo h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #38bdf8;
+    }
+
+    .footer-logo p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #38bdf8;
+    }
+
+    .footer-social a {
+      margin-right: 12px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: color 0.3s;
+    }
+
+    .footer-social a:hover {
+      color: #38bdf8;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      border-top: 1px solid #334155;
+      padding-top: 15px;
+    }
+  </style>
+   <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+
+<body style=" margin: 0; padding: 0; overflow-x: hden; box-sizing: border-box; background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+
+  <header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between" style="">
+      <nav
+        style="display: flex; justify-content: center; align-items: center; background-color: #222; padding: 2vh; height: 10vh; background: linear-gradient(to right, #3b82f6, #06b6d4, #10b981);  backdrop-filter: blur(8px);">
+        <a href="#home"class="font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400" style="color: white; position: absolute; left: 0;  padding: 40px; font-family: Arial, sans-serif; font-weight: bold; text-decoration: none;">Jorgi.dev</a>
+        <ul style=" list-style: none;  display: flex; justify-content: flex-end; padding: 0; margin: 0;">
+          <li style="margin-left: 30px; font-family: Poppins,sans-serif; font-weight: 1000;"><a
+              style="text-decoration: none; color: white; " href="https://drive.google.com/drive/u/0/folders/18JzqafFJ0oo8AQAfzGj6KaJP5QMYxl-L">RESUME</a></li>
+          <li id="LI" style="margin-left: 30px; font-family: Poppins,sans-serif; font-weight: 1000;"><a href="indexAbout.html"
+              style="text-decoration: none; color: white;" onmouseover="lakaka()" onmouseout="kalakaka()">ABOUT</a></li>
+          <li style="margin-left: 30px; font-family: Poppins,sans-serif; font-weight: 1000;"><a
+              style="text-decoration: none; color: white;" href="KONTAK.html">CONTACT</a></li>
+          <li style="margin-left: 30px;  font-family: Poppins,sans-serif; font-weight: 1000;"><a
+              style="text-decoration: none; color: white;" href="https://drive.google.com/drive/folders/1LUVfMHGDHkA4L7BuQFQUp_-nfpVVWmaO?usp=drive_link">SERTIFICAT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="pt-12 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center"
+      style="position: relative; right: -75vh; top: 5vh;">
+      <h1 style="font-size: 48px; font-weight: bold; color: #ffff; "><span style="position: relative; right: -20vh;">Hello</span><br><span
+          style="background: linear-gradient(to right, #3b82f6, #06b6d4, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">JORGI
+          SAPUTRA</span><br><span style="position: relative; right: -31vh;"></span></h1>
+      <p class="typing" class="mt-4 text-lg opacity-90 max-w-prose" style="font-size: 1.9vh; font-family: Poppins,sans-serif;  color: yellow; position: relative; top: -7vh; right: -20vh; "></p>
+      <p class="typing2" class="mt-4 text-lg opacity-90 max-w-prose" style="font-size: 1.9vh; font-family: Poppins,sans-serif;  color: red; position: relative; top: -20vh; right: -3vh; "></p>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="slider-slide">
+      <div class="slider-zoom">
+        <img src="download.png" alt="Project 1">
+        <img src="download (2).png" alt="Project 2">
+        <img src="download (1).png" alt="Project 3">
+      </div>
+      <h4 style="position: relative; text-align: center;  top: 550px; color: #ffff; font-family: DM Sans, sans-serif;">P R O J E C T</h4>
+    </div>
+
+    <div>
+      <h1 class="GOYANG" style="color: white;">SKILL🍙</h1>
+      <div class="TYPING">
+      <h4 style="color: black;"><a class="TYPING233" href="https://id.wikipedia.org/wiki/HTML">H T M L</a></h4>
+      <h4 style="color: black;"><a class="TYPING234" href="https://id.wikipedia.org/wiki/CSS">C S S</a></h4>
+      <h4 style="color: black;"><a class="TYPING235" href="https://id.wikipedia.org/wiki/JavaScript">J A V A S C R I P T</a></h4>
+      <h4 style="color: black;"><a class="TYPING236" href="https://id.wikipedia.org/wiki/PHP">P H P</a></h4>
+    </div>
+    <div style="color: white; text-align: center; position: relative; top: 300px;">
+      <p class="reveal">Designing a Website</p>
+      <p class="reveal">Creating a Website</p>
+      <p class="reveal">Beutifying a Website</p>
+      <p class="reveal">Maintaining a Website</p>
+      <p class="reveal">Problem Solving</p>
+
+    </div>
+
+  </section>
+ <footer>
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <h2>MyWebsite</h2>
+        <p>This My First Portofolio Website</p>
+        <p>7 September 2025</p>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#">Blog</a>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+
+      <!-- Sosmed -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 MyWebsite | All Rights Reserved.
+    </div>
+  </footer>
+  <script>
+    let sentences = ["I AM WEB DEVOLOPMENT"];
+    let typingSpeed = 150; // ms per karakter
+    let pause = 1000; // ms tunggu setelah kalimat selesai
+
+
+    let i = 0; // index kalimat
+    let charIndex = 0;
+    let el = document.querySelector(".typing");
+
+
+
+    function type() {
+      const sentence = sentences[i];
+      if (charIndex < sentence.length) {
+        el.textContent += sentence.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(() => {
+          el.textContent = ""; // hapus teks sebelum kalimat berikutnya
+          charIndex = 0;
+          i = (i + 1) % sentences.length; // loop ke kalimat pertama
+          type();
+        }, pause);
+      }
+    }
+
+
+
+    // mulai animasi
+    type();
+
+
+    const paragraphs = document.querySelectorAll('.reveal ');
+
+function showParagraphs() {
+  paragraphs.forEach((p, i) => {
+    const top = p.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if(top < screenHeight - 50 && !p.classList.contains('show')) {
+      setTimeout(() => {
+        p.classList.add('show');
+      }, i * 400); // jeda antar paragraf 400ms
+    }
+  });
+}
+
+window.addEventListener('scroll', showParagraphs);
+window.addEventListener('load', showParagraphs);
+
+
+  </script>
+</body>
+
+</html>
